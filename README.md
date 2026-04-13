@@ -12,3 +12,9 @@
 5. Finalizas el laboratorio con End Lab
    <img width="1460" height="886" alt="image" src="https://github.com/user-attachments/assets/6924c767-7518-419a-86f9-276e8b8c40b6" />
 
+## Arquitectura 
+
+<img width="1138" height="401" alt="image" src="https://github.com/user-attachments/assets/5086016d-dc19-40eb-8ed6-55801dffe61b" />
+
+<img width="1481" height="650" alt="image" src="https://github.com/user-attachments/assets/a2315e3e-3eb9-4205-a813-3f47a28ceb40" />
+
