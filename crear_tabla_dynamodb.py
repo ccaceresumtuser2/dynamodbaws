@@ -1,3 +1,22 @@
+"""
+===========================================================
+MÓDULO: Gestión de Usuarios en DynamoDB
+===========================================================
+
+🧾 DESCRIPCIÓN:
+Este archivo Crea la tabla  con AWS DynamoDb con boto3
+
+🛠 TECNOLOGÍA:
+- AWS DynamoDB
+- boto3 (Python SDK)
+
+AUTOR: Carlos Jose Caceres Ochoa
+FECHA: 13-04-2026
+VERSIÓN: 1.0
+
+===========================================================
+"""
+
 from config.conexion_aws import conexion_aws_boto3
 
 #autor carlos jose caceres ochoa
@@ -29,4 +48,5 @@ def crear_tabla_dynamodb(table_name):
         print(f"Error al crear la tabla {table_name} en dynamodb")
         print(e)
 
+#llamado a la funcion
 crear_tabla_dynamodb("Usuarios")
