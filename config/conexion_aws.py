@@ -1,6 +1,6 @@
 import boto3
 
-from enviroment import (
+from enviroment.enviroment import (
     REGION_AWS, 
     SERVICIO_AWS_DYNAMODB
     )

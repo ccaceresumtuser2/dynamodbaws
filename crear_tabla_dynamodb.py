@@ -1,4 +1,4 @@
-from conexion_aws import conexion_aws_boto3
+from config.conexion_aws import conexion_aws_boto3
 
 #autor carlos jose caceres ochoa
 ###########################################################
