@@ -82,7 +82,7 @@ def mostrar(items):
    for item in items:
       print(item)
 
-#mostrar(buscar_por_departamento('IT'))
+mostrar(buscar_por_departamento('IT'))
 #mostrar(buscar_empleado('IT', 'E001'))
 #mostrar(buscar_por_correo('luis@mail.com'))
 #mostrar(buscar_por_nombre('Ana Gomez'))

@@ -22,8 +22,7 @@ Tabla: Empleados
 Campo	          Tipo	Descripción
 departamento_id	   PK	Agrupa empleados
 empleado_id	       SK	Identificador único
-nombre	           atributo	Nombre
-apellido           atributo Correo
+nombre_apellido       atributo	Nombre
 cargo 
 correo	           atributo	Para GSI
 
