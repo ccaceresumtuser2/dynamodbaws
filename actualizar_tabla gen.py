@@ -59,6 +59,7 @@ def actualizar_tabla(table_name, item):
 item = {
             "id": "1",
             "nombre": "Juan Perez",
+            "edad":30
                 }
 
 #llamado a la función

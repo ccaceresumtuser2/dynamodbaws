@@ -48,7 +48,7 @@ def insertar_items_tabla(items,table_name):
 
 #item de la tabla Usuarios
 item = {
-            "id": "11",
+            "id": "4",
             "nombre": "Carlos1z",
             "edad": 30,
             "direccion": {
@@ -56,7 +56,8 @@ item = {
                 "pais": "Colombia"
             },
             "telefonos": ["123456", "987654"],
-             "activo": False
+             "activo": False,
+             "habilitado":True
         }
 
 items=[
@@ -86,5 +87,5 @@ items=[
 
 
 insertar_item_tabla(item,"Usuarios")
-insertar_items_tabla(items,"Usuarios")
+#insertar_items_tabla(items,"Usuarios")
 

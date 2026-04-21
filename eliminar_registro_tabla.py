@@ -28,7 +28,7 @@ from boto3.dynamodb.conditions import Attr
 dynamodb = conexion_aws_boto3()
 
 #Elimina si el usuario y el Id esta activo
-def eliminar_usuario_si_activo(table_name, user_id):
+def eliminar_usuario_si_activo(table_name, user_id,activo):
     try:
         table = dynamodb.Table(table_name)
 
@@ -38,7 +38,7 @@ def eliminar_usuario_si_activo(table_name, user_id):
             },
             ConditionExpression="activo = :val",
             ExpressionAttributeValues={
-                ':val': True
+                ':val': activo
             }
         )
 
@@ -80,7 +80,8 @@ def eliminar_usuario_todos_registros_si_activo(table_name,activo):
        with table.batch_writer() as batch:
         while True:
             for item in response['Items']:
-                batch.delete_item(Key={'id': item['id']})
+               print(item)
+               batch.delete_item(Key={'id': item['id']})
 
             if 'LastEvaluatedKey' not in response:
                 break
@@ -94,4 +95,5 @@ def eliminar_usuario_todos_registros_si_activo(table_name,activo):
         print(f"No se pudo eliminar el registros tabla usuarios")
         print(e)
 
+#eliminar_usuario_si_activo("Usuarios","1",False)
 eliminar_usuario_todos_registros_si_activo("Usuarios",False)

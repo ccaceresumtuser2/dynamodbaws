@@ -64,4 +64,4 @@ def scan_filter_expresion_activo_tabla(tabla,activo):
              FilterExpression=Attr('activo').eq(activo))
         return response
   
-scan_filter_expresion_activo("Usuarios",True)
+scan_filter_expresion_activo("Usuarios",False)
